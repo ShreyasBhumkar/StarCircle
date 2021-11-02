@@ -1,0 +1,629 @@
+<!doctype html>
+  <html lang="en">
+    <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+      <!-- Bootstrap CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">  
+      <title>Services - Web Devlopment</title>
+      <style>
+      .logo{
+        height: 45px;
+        width: 200px;
+      }
+      body{
+        font-family: Verdana, sans-serif;
+      }
+      .card-title{
+        font-size: 25px;
+      }
+      h1{
+        border-radius: 10px;
+      }
+      p{
+          font-size: 17px;
+        }
+      </style>
+    </head>
+    <body>
+      
+
+        <nav class="navbar navbar-expand-lg text-info navbar-dark bg-dark fs-6">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="./onlinelogomaker-103021-2125-0284.png" alt="" width="30" class="d-inline-block logo align-text-top">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 px-3">
+                  <li class="nav-items px-2">
+                    <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                  </li>
+                  <li class="nav-item px-2">
+                    <a class="nav-link" aria-current="page" href="./product.html">Product</a>
+                  </li>
+                  <li class="nav-item px-2">
+                    <a class="nav-link" aria-current="page" href="./features.html">Features</a>
+                  </li>
+                  <li class="nav-item dropdown px-2">
+                    <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Services
+                    </a>
+                    <ul class="dropdown-menu px-2 text-center text-dark" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#web-devlopment">Web Devlopment</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#cloud">Cloud Services</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#blockchain">Blockchain Devlopment</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#mobile">Mobile App Devlopment</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#firebase">Firebase App Devlopment</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#testing">QA/Testing</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown px-2">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#">
+                      Company
+                    </a>
+                    <ul class="dropdown-menu px-2 text-center text-dark" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="./company.html">About StarCircle</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="./company.html#vision-mission">Vision & Mission</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="./company.html#implimentations">Our Implimentations</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="./company.html#offerings">Our Offerings</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+                  <button class="btn btn-primary px-2 mx-2 my-2" data-bs-toggle="modal" data-bs-target="#SignUpModal">Create account</button>
+                  <div class="modal fade" id="SignUpModal" tabindex="-1" aria-labelledby="SignUpModal" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title text-black" id="SignUpModal">Create account</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-black">
+                            <form class="row g-3">
+                                <div class="col-12">
+                                  <label for="inputEmail4" class="form-label">Your Name</label>
+                                  <input type="email" class="form-control mb-3" id="inputEmail4">
+                                </div>
+                                <div class="col-12">
+                                  <label for="inputEmail4" class="form-label">Mobile number or email</label>
+                                  <input type="email" class="form-control mb-3" id="inputEmail4">
+                                </div>
+                                <div class="col-12">
+                                  <label for="inputPassword4" class="form-label">Password</label>
+                                  <input type="password" class="form-control" id="inputEmail4">
+                                  <p class="form-check-label mb-3" for="gridCheck">Password must be at least 6 characters.</;>
+                                </div>
+                                <div class="col-12">
+                                  <label for="inputPassword4" class="form-label">Password Again</label>
+                                  <input type="password" class="form-control mb-3" id="inputEmail4">
+                                </div>
+                                <div class="col-12 my-2">
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="checkbox" id="inputEmail4">
+                                      <label class="form-check-label" for="gridCheck">
+                                        Check Me Out
+                                      </label>
+                                    </div>
+                                </div>
+                            </form>    
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Sign Up</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="btn btn-primary px-2 mx-2 my-2" data-bs-toggle="modal" data-bs-target="#LogInModal">Sign In</button>
+                  <div class="modal fade" id="LogInModal" tabindex="-1" aria-labelledby="LogInModal" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title text-black" id="LogInModal">Sign-In</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-black">
+                            <form class="row g-3">
+                                <div class="col-12">
+                                  <label for="inputEmail4" class="form-label">Your Name</label>
+                                  <input type="email" class="form-control mb-3" id="inputEmail4">
+                                </div>
+                                <div class="col-12">
+                                  <label for="inputPassword4" class="form-label">Password</label>
+                                  <input type="password" class="form-control mb-3" id="inputPassword4">
+                                </div>
+                                <div class="col-12 my-2">
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="checkbox" id="gridCheck">
+                                      <label class="form-check-label" for="gridCheck">
+                                        Remember Me
+                                      </label>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Log In</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </nav>
+
+
+          <!-- Web Devlopment Section -->
+  
+
+        <div class="container" id="web-devlopment">
+            <h1 class="mt-5 mb-3 text-light bg-dark p-3">Create a Dynamic Web Interface & Application with the leading MEAN Stack Development Company</h1>
+            <p class="lead">We leverage MEAN Stack web application development powerhouse to provide scalable and dynamic 
+            web applications to address all your business needs.</p>
+            <p class="lead">The MEAN stack, is a collection of technologies that is used for 
+                building complex and interactive web applications. It is a combination of technologies like 
+                MongoDB, Express Js, Angular Js and Node Js used for any Mean Stack app development. 
+                Mean Stack uses javascript to develop new modules and features. The main reason behind the using 
+                MEAN Stack development services is its ease of development and flexibility.
+            </p>
+            <p class="lead">StarCircle is committed to deliver high-end products for customers across the globe. 
+                As one of the best mean stack development company in India , we offer dynamic and scalable 
+                MEAN Stack web applications that are built from scratch, to cater to all your business needs.
+            </p>
+            
+            <div class="row py-3">
+                <div class="col-sm-3 col-md-6 col-lg-3 mb-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">MongoDB</h5>
+                      <p class="card-text">MongoDB is a NoSQL database that will hold all of the application's data. 
+                        It allows developers to quickly change the structure of the data being persisted.</p>
+                      <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3 col-md-6 col-lg-3 mb-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Express.Js</h5>
+                      <p class="card-text">Express Js is use to create web applications easily. 
+                        It provides a slightly simpler interface for creating request endpoints, handling cookies, forming the response and handling routes.</p>
+                      <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3 col-md-6 col-lg-3 mb-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Angular.Js</h5>
+                        <p class="card-text">AngularJS, a client-side framework. MongoDB stores data in a 
+                        JSON-like format and AngularJS allows the client to seamlessly send and receive JSON documents.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-6 col-lg-3 mb-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Node.Js</h5>
+                        <p class="card-text">Node.js and Express is used to create a RESTful API server. 
+                        To connect MongoDB and the app server the Node.js driver is been used.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Cloud Services -->
+
+        <div class="container" id="cloud">
+            <h1 class="mt-5 mb-3 text-light bg-dark p-3">Expertise in AWS Cloud Services</h1>
+            <h3 class="mb-2">AWS Cloud Consulting / AWS Cloud Migration / AWS Managed Services</h3>
+            <p class="lead">StarCircle, a leading AWS cloud consulting company delivers a variety of robust cloud solutions.</p>
+            <h2 class="mb-2">Why AWS Cloud ?</h2>
+            <p class="lead">In a 24 X 7 internet connected world, competition is at highest peak and no scope for 
+                patience. Large applications require comprehensive management to enable them to scale to meet the 
+                challenges of ever-changing conditions and to maintain the levels of service required by demanding 
+                users. Amazon Web Services(AWS) cloud offers cloud solutions to move faster , lower IT cost, and 
+                scale applications.
+            </p>
+            <p class="lead">We identify and outline the existing enterprise IT landscape in terms of technology, 
+            financial ROI, business compliance, network performance, end user experience, security and compliance, 
+            software license and map it to the desired cloud requirements.
+            </p>
+            
+            <div class="row py-3">
+                <div class="col-sm-4 col-md-6 col-lg-4 mb-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">AWS Cloud Consulting Service</h5>
+                      <p class="card-text">By conducting series of workshops with you we come up with a complete 
+                        future state definition, including Cloud architecture, tools and technologies, 
+                        total cost of ownership and the managed services requirements.</p>
+                      <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4 col-md-6 col-lg-4 mb-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">AWS Cloud Migration Service</h5>
+                      <p class="card-text">We help you to migrate and deploy various applications, web-based applications, 
+                        enterprise applications and we ensure it responds well to auto-scaling and is Fault Tolerant.</p>
+                      <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4 col-md-6 col-lg-4 mb-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">AWS Managed Services</h5>
+                        <p class="card-text">Our Expert AWS cloud team manage your AWS-based infrastructure, associated databases, 
+                        and applications deployed on AWS. We will ensure to integrate AWS services to maximize output.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Blockchain Devlopment -->
+
+        <div class="container" id="blockchain">
+            <h1 class="mt-5 mb-3 text-light bg-dark p-3">Blockchain Development Company</h1>
+            <h3 class="mb-2">Main features of Blockchain Technology</h3>
+            <p class="lead">Blockchain is one of the emerging technologies currently in the market it gives an 
+            opportunity to radically transform the way we do things by providing a standard architecture to address 
+            different business and organisational problems.</p>
+            <p class="lead">A blockchain is a unique form of Database storage system available in the market which 
+            uses records to store data or information. Storing blocks of information that are identical across the 
+            network which get copied automatically with the mechanism of cryptography providing a more secure data 
+            storage platform that has no single point of failure & can be controlled by any single entity.
+            </p>
+            <p class="lead">We provide a complete Blockchain-powered solution for mobile app world with the 
+            immutable benefits of Decentralization.
+            </p>
+            
+            <div class="row py-3">
+                <div class="col-sm-4 col-md-6 col-lg-4 mb-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Greater Transparency</h5>
+                      <p class="card-text">Blockchain technology is a type of distributed ledger, all network 
+                        participants share the same documentation and require special permission to alter data make 
+                        it more transparent.</p>
+                      <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4 col-md-6 col-lg-4 mb-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Decentralized System</h5>
+                      <p class="card-text">The Blockchain technology proves to be a really effective tool for 
+                        decentralizing the web. The owner has a direct control over his account using a key that is linked 
+                        to his account which gives the owner a power to transfer his assets to anyone he wants.</p>
+                      <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4 col-md-6 col-lg-4 mb-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Highly Secure</h5>
+                        <p class="card-text">Blockchain technology has a better security because there is not even a single 
+                        chance of shutting down of the system & transactions are cryptographically secured and provide 
+                        integrity.
+                        </p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-6 col-lg-4 mb-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Reduced Costs</h5>
+                        <p class="card-text">In Blockchain you don’t need as many third parties or middlemen to 
+                        make guarantees which reduce the cost you just need to trust the data on the blockchain.
+                        </p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-6 col-lg-4 mb-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Availability</h5>
+                        <p class="card-text">The blockchain network is secured by a number of computers called nodes and these 
+                        nodes confirm the transaction on network and the data is replicated and updated on each and every node.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-6 col-lg-4 mb-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Peer-to-Peer Global Transactions</h5>
+                        <p class="card-text">It enabled the fast, secure and cheap transfer of funds across the 
+                        globe it has no limitation like location, minimum transfer, security that’s why prefer 
+                        cryptocurrency for international transfers.
+                        </p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Mobile App Devlopment -->
+
+        <div class="container" id="mobile">
+            <h1 class="mt-5 mb-3 text-light bg-dark p-3">Mobile App Devlopment Company In India</h1>
+            <h3 class="mb-2">High Performance Cross Platform Mobile App Development with HTML5 & CSS3</h3>
+            <p class="lead mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+              </svg> Ionic App development</p>
+            <p class="lead mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+              </svg> Fluter App development</p>
+            <p class="lead mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+              </svg> React Native App development</p>
+            <h2 class="mb-2">Why AWS Cloud ?</h2>
+            <p class="lead">At StarCircle, mobile app development process is Innovative, future thinking and 
+            by considering ROI in the end. We are able to fine tune and build your app to perfection. 
+            To be successful in App market, you must have to have right app, the right functionality, and right 
+            support. That's exactly what you'll find with Angular Minds, Mobile Application Development Company in 
+            India.
+            </p>
+            <p class="lead">One of the most important decision is to choose an iPhone Application development 
+            company. Our team is of skilled and expert IOS developers, having extensive knowledge of iPhone 
+            application development environment, SDKs and APIs. Contact us today to share your idea and get your 
+            app development.
+            </p>
+            
+            <div class="row py-3">
+                <div class="col-sm-3 col-md-6 col-lg-3 mb-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Sketching Mobile App development Strategy</h5>
+                      <p class="card-text">In early phase of app development we decide strategies
+                        through research of apps concept, potential functionality and
+                        overall workflow. We believe that right strategy and in-depth
+                        consulting always ensure a profitable business model.</p>
+                      <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3 col-md-6 col-lg-3 mb-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Our Mobile App Development Process</h5>
+                      <p class="card-text">Our dedicated mobile application developers, designers, engineers 
+						develops intuitive e-commerce, educational, utility mobile apps 
+						that helps improve productivity and maximize ROI for business. 
+						Here is our mobile app development step by step process.</p>
+                      <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3 col-md-6 col-lg-3 mb-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Creative App Designing</h5>
+                        <p class="card-text">For StarCircle, designing an App is being purposeful and
+                            each pixel is considered to be perfect. We craft designs
+                            keeping in mind outstanding, polished , native Android Apps. We
+                            know each client is different with different expectations and
+                            we are serving them with truly customized experience.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-6 col-lg-3 mb-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Developers shape your App</h5>
+                        <p class="card-text">We have intelligent and skilled mobile app developers team
+                            that has been knowledge of major platforms or mobile frameworks
+                            used for mobile app development. Development is the phase where
+                            our coding brains work with full potential. Coding to perfect
+                            fit as per customer's idea into App.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Firebase App Devlopment -->
+
+        <div class="container" id="firebase">
+            <h1 class="mt-5 mb-3 text-light bg-dark p-3">Firebase App Devlopment Company In India</h1>
+            <h3 class="mb-2">Firebase - A Comprehensive Mobile App Development Platform</h3>
+            <p class="lead">Firebase is a mobile app development framework built on Google infrastructure which tends to add agility and simplicity to product development, 
+            integration, enhancement, bug fixes& release processes, it also contributes for the app marketing, 
+            user engagement, and user experience.</p>
+            <p class="lead">Firebase provides you functionality like analytics, databases, messaging and crash 
+            reporting to create your new app or enhance your existing app.Firebase lets prioritize and fix issues, 
+            provides insights app's performance and let you test your app to improve app quality.Firebase provides 
+            features like Analytics, In-app messaging, remote config, app indexing to track user engagement data for their business.
+            </p>
+            
+            <div class="row py-3">
+                <div class="col-sm-3 col-md-6 col-lg-3 mb-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Easy to use infrastructure</h5>
+                      <p class="card-text">Google Cloud will keep triggering your functions, every time a function 
+                        triggeres a new virtual server is created for performing operations, it also scales servers 
+                        infrastructure automatically according to workload.</p>
+                      <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3 col-md-6 col-lg-3 mb-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Manage Servers</h5>
+                      <p class="card-text">There's no need to manage and scale your own servers, Firebase lets 
+                        you automatically run backend code in response to events triggered by Firebase features and 
+                        HTTPS requests. Your code is stored in Google's cloud.</p>
+                      <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3 col-md-6 col-lg-3 mb-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Keep your Logic Private & Secure</h5>
+                        <p class="card-text">firebase Cloud Functions are fully isolated from the client, its logic, 
+                        code & functions are private and secure on the cloud which can’t be reverse engineered 
+                        without proper authentication.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-6 col-lg-3 mb-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Low Maintenance</h5>
+                        <p class="card-text">Never worry about credentials, server configuration, provisioning of 
+                        new servers as firebase automatically scales up computing resources to match the usage 
+                        patterns of your users.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- QA/Testing Section -->
+
+        <div class="container" id="testing">
+          <h1 class="mt-5 mb-3 text-light bg-dark p-3">Software Testing & QA Services</h1>
+          <h3 class="mb-2">Empowe your Business with our Reliable Software Testing & QA Services</h3>
+          <p class="lead">Unit testing is a type of software testing that tests individual units and components of 
+          a device. It is taken out in the coding phase of an application by the developers. Unit testing provides 
+          numerous software testing services that identify and fix the system defects at a very early stage of the 
+          software development lifecycle (SDLC). It is one of the best software testing services that helps in 
+          validating the accuracy of a section of code by considering mock objects, stubs, drivers, as well as unit 
+          testing frameworks.</p>
+          <p class="lead">We are the global provider of QA & Software testing services in India, depending on 
+          the specifics of your project, our team develops QA processes with modern tools and methodologies to make 
+          sure your software solutions fully meet your needs and expectations.</p>
+          
+          <div class="row py-3">
+              <div class="col-sm-3 col-md-6 col-lg-3 mb-3">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Web Application Testing</h5>
+                    <p class="card-text">Our web quality assurance and testing services detect issues in web-based 
+                    applications before going to a production environment to address issues like Functional, 
+                    security, web services & integrations issues.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3 col-md-6 col-lg-3 mb-3">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Mobile App Testing</h5>
+                    <p class="card-text">Mobile app testing services tests the functionality, usability,security, 
+                    performance and consistency of the software. Our enterprise quality assurance services help to 
+                    build applications that are scalable and accessible across multiple platforms.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3 col-md-6 col-lg-3 mb-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Load Testing</h5>
+                      <p class="card-text">Load testing guarantees application performance during severe stress & 
+                      peak traffic. At StarCircle, we help to identify the maximum operating capacity of an 
+                      application with our automation testing services.</p>
+                      <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-sm-3 col-md-6 col-lg-3 mb-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Automated Testing</h5>
+                      <p class="card-text">Test automation tools is a crucial component in the DevOps toolchain and we use 
+                        tools like selenium,postman & burp suite to automate our web & mobile app testing.</p>
+                      <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+
+
+
+      <!-- footer section -->
+
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-4 my-3 border-top">
+        <div class="col-md-8 col-sm-6 d-flex align-items-center">
+          <span class="text-dark text-center p-2">© 2021 StarCircle Pvt. Ltd, All Rights Reserved</span>
+        </div>
+    
+        <ul class="nav col-md-4 justify-content-center col-sm text-center list-unstyled d-flex p-3">
+          <li class="ms-3"><a class="link-dark" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+          </svg></a></li>
+          <li class="ms-3"><a class="link-dark" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+          </svg></a></li>
+          <li class="ms-3"><a class="link-dark" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+          </svg></a></li>
+          <li class="ms-3"><a class="link-dark" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+          </svg></a></li>
+        </ul>
+      </footer>
+
+      <!-- Optional JavaScript; choose one of the two! -->
+  
+      <!-- Option 1: Bootstrap Bundle with Popper -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  
+      <!-- Option 2: Separate Popper and Bootstrap JS -->
+      <!--
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+      -->
+    </body>
+  </html>
